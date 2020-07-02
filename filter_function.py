@@ -43,5 +43,14 @@ print(vowel_list)
 ''' use of map function
 '''
 
+# def is_onemore(num):
+#     return num + 1
+
+numbers = [1,2,3,4,55,6,6,545,2,532,252,56,62,6,7,8,6,4,3,2,4,56,7,9]
+
+plus_one = list(map(lambda x: x + 1,numbers))
+print(plus_one)
+
+
 
 
