@@ -41,7 +41,7 @@ print(vowel_list)
 '''
 
 ''' use of map function
-'''
+
 
 # def is_onemore(num):
 #     return num + 1
@@ -50,6 +50,22 @@ numbers = [1,2,3,4,55,6,6,545,2,532,252,56,62,6,7,8,6,4,3,2,4,56,7,9]
 
 plus_one = list(map(lambda x: x + 1,numbers))
 print(plus_one)
+
+'''
+
+''' use of reduce function in adding more than 2 numbers
+'''
+#we have to import reduce from functools
+from functools import reduce
+
+# def add_all(a,b):
+#     return a+b
+numbers = [1,2,3,4,55,6,6,545,2,532,252,56,62,6,7,8,6,4,3,2,4,56,7,9]
+
+final = reduce(lambda a,b: a+b,numbers)
+print(final)
+
+
 
 
 
